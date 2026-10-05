@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download Tyxen Launcher Beta (Free) for Windows PC — Tyxen Beta</title>
+  <meta name="description" content="Download Tyxen Launcher Beta free for Windows 10/11. One fast, unified game launcher for all your PC games — auto-updates, cloud saves & mods. Try the public beta now." />
+  <meta name="keywords" content="Tyxen, Tyxen Launcher, Tyxen Beta, Tyxen Client, download Tyxen, free game launcher, PC game launcher, Minecraft launcher, Windows game launcher, game launcher beta" />
+  <meta name="author" content="Tyxen" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="googlebot" content="index, follow" />
+  <link rel="canonical" href="https://beta.tyxen.gg/" />
+  <meta name="theme-color" content="#070907" />
+
+  <!-- SEO / Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Tyxen" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Download Tyxen Launcher Beta (Free) for Windows PC" />
+  <meta property="og:description" content="One fast, unified game launcher for all your PC games. Auto-updates, cloud saves, mods. Try the free public beta." />
+  <meta property="og:image" content="https://beta.tyxen.gg/og-cover.png" />
+  <meta property="og:image:alt" content="Tyxen Launcher Beta — one launcher for every game you own" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://beta.tyxen.gg/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@tyxen" />
+  <meta name="twitter:title" content="Download Tyxen Launcher Beta (Free) for Windows PC" />
+  <meta name="twitter:description" content="One fast, unified game launcher for all your PC games. Try the free public beta." />
+  <meta name="twitter:image" content="https://beta.tyxen.gg/og-cover.png" />
+
+  <!-- Structured data: helps Google show rich results (app info + FAQ) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Tyxen Launcher",
+    "applicationCategory": "GameApplication",
+    "applicationSubCategory": "Game Launcher",
+    "operatingSystem": "Windows 10, Windows 11",
+    "softwareVersion": "0.1.0",
+    "releaseNotes": "Public beta — Windows-only build with unified library, delta auto-updates and lightweight overlay.",
+    "description": "Tyxen Launcher Beta — one fast, unified home for all your PC games. Free public beta for Windows.",
+    "url": "https://beta.tyxen.gg/",
+    "downloadUrl": "https://beta.tyxen.gg/#download",
+    "screenshot": "https://beta.tyxen.gg/showcase.png",
+    "image": "https://beta.tyxen.gg/logo.png",
+    "author": { "@type": "Organization", "name": "Tyxen", "url": "https://beta.tyxen.gg/" },
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "isAccessibleForFree": true
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Is the Tyxen beta free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — the Tyxen Launcher beta is completely free, and your library, saves and profiles carry over to the full release." } },
+      { "@type": "Question", "name": "Is Tyxen safe to install?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every beta build is code-signed and published with a SHA256 checksum. Only download from this page or the official Discord." } },
+      { "@type": "Question", "name": "Which operating systems are supported?", "acceptedAnswer": { "@type": "Answer", "text": "Right now the beta is Windows-only (Windows 10/11 64-bit). macOS and Linux builds are planned." } },
+      { "@type": "Question", "name": "How do I update to a newer beta?", "acceptedAnswer": { "@type": "Answer", "text": "In-app via Settings, Updates, Check for updates — or re-download the installer, which updates in place." } },
+      { "@type": "Question", "name": "How do I report a bug?", "acceptedAnswer": { "@type": "Answer", "text": "Join the Tyxen Discord, go to #open-a-ticket, open a ticket with your launcher version, OS, repro steps and logs." } },
+      { "@type": "Question", "name": "How do I leave the beta?", "acceptedAnswer": { "@type": "Answer", "text": "Go to Settings, General, Leave Beta to revert to stable — or uninstall anytime, your games stay untouched." } }
+    ]
+  }
+  </script>
+
+  <!-- Favicon: Tyxen logo -->
+  <link rel="icon" type="image/png" href="logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Space Grotesk', 'Inter', 'sans-serif'],
+          },
+          colors: {
+            void: '#070907',
+            panel: '#0A0D0A',
+            card: '#0E130E',
+            line: 'rgba(255,255,255,0.08)',
+            brand: '#22C55E',
+            branddark: '#16A34A',
+            brandlight: '#4ADE80',
+          },
+          boxShadow: {
+            soft: '0 8px 32px rgba(0,0,0,.45)',
+            btn: '0 4px 20px rgba(34,197,94,.28)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root { --brand:#22C55E; }
+    html { scroll-padding-top: 84px; }
+    body { background:#070907; color:#E9EEE9; -webkit-font-smoothing:antialiased; }
+    ::selection { background:rgba(34,197,94,.32); }
+    :focus-visible { outline:2px solid #4ADE80; outline-offset:3px; border-radius:6px; }
+
+    .grad-text { background:linear-gradient(92deg,#4ADE80,#22C55E 60%,#BBF7D0); -webkit-background-clip:text; background-clip:text; color:transparent; }
+    .btn-primary { background:#16A34A; transition:background .18s ease, transform .18s ease, box-shadow .18s ease; }
+    .btn-primary:hover { background:#15803D; transform:translateY(-1px); box-shadow:0 4px 20px rgba(34,197,94,.35); }
+    .btn-primary:active { transform:translateY(0); }
+    .btn-ghost { border:1px solid rgba(255,255,255,.1); background:rgba(255,255,255,.04); transition:background .18s ease, border-color .18s ease; }
+    .btn-ghost:hover { background:rgba(255,255,255,.08); border-color:rgba(74,222,128,.4); }
+
+    .glass { background:rgba(10,13,10,.82); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); }
+    .card { background:#0E130E; border:1px solid rgba(255,255,255,.08); transition:border-color .2s ease, transform .2s ease; }
+    .card:hover { border-color:rgba(34,197,94,.35); transform:translateY(-2px); }
+
+    .bg-grid {
+      background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+      background-size:40px 40px;
+      mask-image:radial-gradient(ellipse 75% 65% at 50% 25%,black 40%,transparent 100%);
+      -webkit-mask-image:radial-gradient(ellipse 75% 65% at 50% 25%,black 40%,transparent 100%);
+    }
+    .glow-orb { position:absolute; border-radius:9999px; filter:blur(100px); pointer-events:none; }
+
+    /* Full-page blurred video backdrop */
+    .bg-video-wrap { position:fixed; inset:0; z-index:-2; overflow:hidden; background:#070907; }
+    .bg-video-wrap video { width:100%; height:100%; object-fit:cover; transform:scale(1.08); filter:blur(14px) brightness(.32) saturate(1.25); }
+    .bg-video-overlay { position:fixed; inset:0; z-index:-1; pointer-events:none;
+      background:
+        radial-gradient(ellipse 70% 45% at 50% 0%, rgba(34,197,94,.14), transparent 70%),
+        linear-gradient(to bottom, rgba(7,9,7,.55), rgba(7,9,7,.72) 45%, rgba(7,9,7,.88));
+    }
+
+    .reveal { opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease; }
+    .reveal.visible { opacity:1; transform:none; }
+    @media (prefers-reduced-motion: reduce) { .reveal{opacity:1;transform:none;transition:none} html{scroll-behavior:auto} .bg-video-wrap video{display:none} }
+
+    .nav-link { position:relative; color:#B7C2B8; transition:color .18s ease; padding:6px 2px; }
+    .nav-link:hover { color:#fff; }
+    .nav-link.active { color:#fff; }
+    .nav-link.active::after { content:''; position:absolute; left:0; right:0; bottom:-2px; height:2px; border-radius:2px; background:#22C55E; }
+
+    .faq-answer { display:grid; grid-template-rows:0fr; transition:grid-template-rows .28s ease; }
+    .faq-item[data-open="true"] .faq-answer { grid-template-rows:1fr; }
+    .faq-answer > div { overflow:hidden; }
+    .faq-item[data-open="true"] .faq-chevron { transform:rotate(180deg); }
+    .faq-chevron { transition:transform .28s ease; }
+
+    .skip-link { position:absolute; left:-9999px; top:0; z-index:100; }
+    .skip-link:focus { left:12px; top:12px; background:#fff; color:#000; padding:8px 14px; border-radius:8px; }
+    code.mono, .mono { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; }
+    .mock-dot { width:10px; height:10px; border-radius:9999px; }
+  </style>
+</head>
+
+<body class="font-sans min-h-screen flex flex-col">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Blurred fullscreen video backdrop -->
+  <div class="bg-video-wrap" aria-hidden="true">
+    <video autoplay muted loop playsinline preload="auto" src="bg.mp4"></video>
+  </div>
+  <div class="bg-video-overlay" aria-hidden="true"></div>
+
+  <!-- ================= EDITABLE SITE CONFIG ================= -->
+  <script>
+    const SITE_CONFIG = {
+      launcherName: "Tyxen Launcher",
+      tagline: "Your games. One launcher. Zero friction.",
+      heroSub: "The public beta of Tyxen Launcher — a fast, unified home for all your PC games. Try it early, break it, and help shape what comes next.",
+      version: "v0.1.0-beta",
+      releaseDate: "October 5, 2026",
+      supportedOS: ["Windows 10/11 64-bit"],
+      links: {
+        downloadWindows: "Tyx-Launcher-Setup.exe",
+        downloadMac: "https://download.tyxen.gg/beta/macos/Tyxen-0.1.0-beta.dmg",
+        downloadLinux: "https://download.tyxen.gg/beta/linux/Tyxen-0.1.0-beta.AppImage",
+        discordInvite: "https://discord.gg/JjRzw3Rgmt",
+        ticketChannel: "https://discord.gg/JjRzw3Rgmt",
+        ticketChannelName: "#open-a-ticket",
+        github: "https://github.com/tyxen",
+        twitter: "https://x.com/tyxen",
+        youtube: "https://youtube.com/@tyxen",
+        terms: "#", privacy: "#",
+      },
+      discordWidgetUrl: "",
+      discordFallbackOnline: 1284,
+      downloads: [
+        { os: "Windows", icon: "windows", available: true, file: "Tyx-Launcher-Setup.exe", size: "472.8 MB", req: "Windows 10/11 64-bit", urlKey: "downloadWindows", sha: "5ce78549a40cc6e21a9269a519ab1c8d21a6f38c15f8fb6b7c17ac6bd6629f45" },
+        { os: "macOS", icon: "apple", available: false, file: "Tyxen-0.1.0-beta.dmg", size: "—", req: "macOS 13 or later", urlKey: "downloadMac", sha: "" },
+        { os: "Linux", icon: "linux", available: false, file: "Tyxen-0.1.0-beta.AppImage", size: "—", req: "Ubuntu 22.04+ / glibc 2.35+", urlKey: "downloadLinux", sha: "" },
+      ],
+      features: [
+        { icon: "bolt", title: "Blazing-fast launches", text: "Cold start in under 2 seconds. Tyxen stays light in the background so your games get every frame." },
+        { icon: "grid", title: "Unified game library", text: "Steam, Epic, GOG and sideloaded titles in one searchable library. No more launcher hopping." },
+        { icon: "refresh", title: "Smart auto-updates", text: "Delta patching, scheduled updates and bandwidth limits. Wake up to games ready to play." },
+        { icon: "cloud", title: "Cloud saves & profiles", text: "Sync saves, settings and per-game profiles across machines. Reinstall without losing a thing." },
+        { icon: "puzzle", title: "Mod-ready by design", text: "One-click mod profiles, load-order handling and instant rollbacks." },
+        { icon: "overlay", title: "Lightweight overlay", text: "FPS counter, screenshots and friends list in a minimal overlay that stays out of the way." },
+      ],
+      changelog: [
+        { version: "v0.1.0-beta", date: "2026-10-05", tag: "Latest", changes: ["Public beta launch", "Unified library with Steam / Epic / GOG import", "Delta auto-updates with bandwidth scheduling", "Lightweight in-game overlay (FPS + screenshots)", "40+ alpha bug fixes including blank library on Wayland"] },
+        { version: "v0.0.9-alpha", date: "2026-09-18", tag: "", changes: ["Cloud save sync (experimental)", "Per-game launch profiles", "Cold-start time improved: 3.1s to 1.8s", "Fixed crash on large Steam library imports"] },
+        { version: "v0.0.8-alpha", date: "2026-08-29", tag: "", changes: ["Mod profiles v1 with load-order editor", "Installer and theme polish", "Linux AppImage build stabilized"] },
+      ],
+      faqs: [
+        { q: "Is the beta free?", a: "Yes — the Tyxen Launcher beta is completely free. There are no paid tiers during the beta, and your library, saves and profiles carry over to the full release." },
+        { q: "Is it safe to install?", a: "Yes. Every beta build is code-signed and published with a SHA256 checksum (see Download). We never bundle adware or third-party offers. Only download from this page or our official Discord." },
+        { q: "Which operating systems are supported?", a: "Right now the beta is Windows-only (Windows 10/11 64-bit). macOS and Linux builds are planned — join the Discord to get notified when they drop." },
+        { q: "How do I update to a newer beta?", a: "In-app: Settings, Updates, Check for updates. Or re-download the installer from this page — it updates in place and keeps your library and settings." },
+        { q: "How do I report a bug?", a: "Join our Discord, head to #open-a-ticket, open a ticket, and include your launcher version, OS, steps to reproduce, and screenshots or logs." },
+        { q: "How do I leave the beta?", a: "Settings, General, Leave Beta reverts you to the latest stable build. Or uninstall anytime — your games stay untouched, and you can export your profile first." },
+      ],
+      sysReq: {
+        windows: ["Windows 10 64-bit (21H2+) or Windows 11", "4 GB RAM (8 GB recommended)", "600 MB disk + space for games", "DirectX 11 capable GPU"],
+        mac: ["macOS 13 Ventura or later", "Apple Silicon or Intel 64-bit", "4 GB RAM, 600 MB disk"],
+        linux: ["Ubuntu 22.04+ / Fedora 38+ (glibc 2.35+)", "4 GB RAM, 600 MB disk", "X11 or Wayland"],
+      }
+    };
+  </script>
+
+  <!-- ============ MODERN CUSTOM HEADER ============ -->
+  <header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6">
+      <nav aria-label="Primary" id="navPill" class="mt-3 flex items-center justify-between gap-3 rounded-2xl border border-white/[.07] bg-[#0A0D0A]/80 px-3 sm:px-4 h-14 transition-all duration-300" style="backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);">
+        <!-- Logo: Tyxen official logo -->
+        <a href="#top" class="flex items-center gap-2.5 shrink-0" aria-label="Tyxen Beta home">
+          <img src="logo.png" alt="Tyxen logo" width="34" height="34" class="w-[34px] h-[34px] rounded-[9px] object-cover" />
+          <span class="leading-none">
+            <span class="font-display font-bold text-[17px] tracking-tight block">Tyxen</span>
+            <span class="text-[10px] tracking-[.18em] text-slate-500 font-semibold">LAUNCHER</span>
+          </span>
+          <span class="text-[10px] font-bold tracking-widest px-2 py-1 rounded-md bg-green-500/15 border border-green-500/30 text-green-300" data-config="betaBadge">BETA</span>
+        </a>
+        <!-- Center links -->
+        <div class="hidden lg:flex items-center gap-7 text-[14px] font-medium">
+          <a href="#features" class="nav-link" data-nav="features">Features</a>
+          <a href="#showcase" class="nav-link" data-nav="showcase">Showcase</a>
+          <a href="#download" class="nav-link" data-nav="download">Download</a>
+          <a href="#changelog" class="nav-link" data-nav="changelog">Changelog</a>
+          <a href="#faq" class="nav-link" data-nav="faq">FAQ</a>
+          <a href="#report" class="nav-link inline-flex items-center gap-1.5" data-nav="report">Report a Bug <span class="w-1.5 h-1.5 rounded-full bg-green-400" aria-hidden="true"></span></a>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="hidden xl:inline-flex mono text-[11px] text-slate-500 border border-white/10 rounded-lg px-2.5 py-1.5" data-config="version">v0.1.0-beta</span>
+          <a href="#download" class="btn-primary hidden sm:inline-flex items-center gap-2 text-sm font-semibold text-white px-4 py-2.5 rounded-xl">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Beta
+          </a>
+          <button id="menuBtn" class="lg:hidden p-2 rounded-lg border border-white/10 text-slate-200" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+            <svg id="menuIconOpen" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            <svg id="menuIconClose" class="hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+      </nav>
+      <!-- Mobile menu -->
+      <div id="mobileMenu" class="lg:hidden hidden pt-2">
+        <div class="rounded-2xl border border-white/[.07] bg-[#0A0D0A]/95 p-2.5 flex flex-col text-[15px]" style="backdrop-filter:blur(16px);">
+          <a href="#features" class="mobile-link px-3 py-2.5 rounded-lg hover:bg-white/5 text-slate-200">Features</a>
+          <a href="#showcase" class="mobile-link px-3 py-2.5 rounded-lg hover:bg-white/5 text-slate-200">Showcase</a>
+          <a href="#download" class="mobile-link px-3 py-2.5 rounded-lg hover:bg-white/5 text-slate-200">Download</a>
+          <a href="#changelog" class="mobile-link px-3 py-2.5 rounded-lg hover:bg-white/5 text-slate-200">Changelog</a>
+          <a href="#faq" class="mobile-link px-3 py-2.5 rounded-lg hover:bg-white/5 text-slate-200">FAQ</a>
+          <a href="#report" class="mobile-link px-3 py-2.5 rounded-lg hover:bg-white/5 text-green-300">Report a Bug</a>
+          <a href="#download" class="mobile-link btn-primary text-center font-semibold text-white px-3 py-2.5 rounded-lg mt-1">Download Beta</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+  <!-- ================= HERO ================= -->
+  <section id="top" class="relative overflow-hidden pt-[104px] md:pt-[120px] pb-14 md:pb-20">
+    <div class="bg-grid absolute inset-0" aria-hidden="true"></div>
+    <div class="glow-orb w-[560px] h-[320px] bg-green-600/20 -top-20 left-1/2 -translate-x-1/2" aria-hidden="true"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="reveal visible">
+        <div class="flex flex-wrap items-center gap-2 mb-5">
+          <span class="inline-flex items-center gap-2 text-[11px] font-bold tracking-widest px-3 py-1.5 rounded-full border border-green-500/30 bg-green-500/10 text-green-300">
+            <span class="w-1.5 h-1.5 rounded-full bg-green-400" aria-hidden="true"></span>
+            BETA · PUBLIC TESTING OPEN
+          </span>
+          <span class="inline-flex items-center gap-2 text-xs text-slate-400 px-3 py-1.5 rounded-full border border-white/10 bg-white/[.03]">
+            <span class="mono" data-config="version">v0.1.0-beta</span><span class="text-slate-600">·</span><span data-config="releaseDate">October 5, 2026</span>
+          </span>
+        </div>
+
+        <h1 class="font-display font-bold tracking-tight text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.06]">
+          One launcher.<br /><span class="grad-text">Every game you own.</span>
+        </h1>
+        <p class="mt-5 text-slate-400 text-base sm:text-lg max-w-xl leading-relaxed" data-config="heroSub"></p>
+
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="#download" class="btn-primary inline-flex justify-center items-center gap-2 font-semibold text-white px-7 py-3.5 rounded-xl text-[15px]">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Beta — Free
+          </a>
+          <a href="#report" class="btn-ghost inline-flex justify-center items-center gap-2 font-semibold px-7 py-3.5 rounded-xl text-[15px] text-slate-100">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2 4 6v12l4 4h8l4-4V6l-4-4z"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="12" y1="9" x2="12" y2="15"/></svg>
+            Report a Bug
+          </a>
+        </div>
+
+        <dl class="mt-7 flex flex-wrap gap-x-6 gap-y-2 text-[13px] text-slate-500">
+          <div class="flex items-center gap-1.5"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg><span>Free during beta</span></div>
+          <div class="flex items-center gap-1.5"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><span><span data-config="supportedOS">Windows 10/11 64-bit</span> <span class="text-slate-600">· macOS &amp; Linux soon</span></span></div>
+          <div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-green-400" aria-hidden="true"></span><span><strong id="onlineCount" class="text-slate-300 font-semibold">1,284</strong> testers online</span></div>
+        </dl>
+
+        <p class="mt-5 text-[13px] text-amber-200/90 bg-amber-400/[.06] border border-amber-300/20 rounded-xl px-4 py-3 max-w-xl leading-relaxed">
+          <strong>Early build notice:</strong> this beta is unfinished — expect bugs and crashes. Back up your saves before installing.
+        </p>
+      </div>
+
+      <!-- Minimal launcher mockup -->
+      <div class="reveal visible relative" role="img" aria-label="Preview of the Tyxen Launcher interface">
+        <div class="absolute -inset-3 bg-green-500/[.07] blur-2xl rounded-[24px]" aria-hidden="true"></div>
+        <div class="relative rounded-2xl border border-white/10 bg-[#0B0F0B] shadow-soft overflow-hidden">
+          <div class="flex items-center gap-2 px-4 py-3 border-b border-white/[.07]">
+            <span class="mock-dot bg-[#2A2E2A]"></span><span class="mock-dot bg-[#2A2E2A]"></span><span class="mock-dot bg-green-500"></span>
+            <span class="ml-2 text-xs text-slate-300 font-medium flex items-center gap-2">
+              <img src="logo.png" alt="" width="16" height="16" class="w-4 h-4 rounded object-cover" />
+              Tyxen Launcher</span>
+            <span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-green-500/15 text-green-300 border border-green-500/25">BETA</span>
+            <span class="ml-auto text-[11px] text-slate-500 mono" data-config="version">v0.1.0-beta</span>
+          </div>
+          <div class="flex">
+            <div class="hidden sm:flex flex-col gap-1 w-40 shrink-0 p-3 border-r border-white/[.06] text-[12px]">
+              <p class="px-2 pt-1 pb-2 text-[10px] tracking-widest text-slate-600 font-bold">LIBRARY</p>
+              <span class="px-2.5 py-2 rounded-lg bg-green-500/15 border border-green-500/25 text-green-200 font-medium">All Games</span>
+              <span class="px-2.5 py-2 rounded-lg text-slate-500">Favorites</span>
+              <span class="px-2.5 py-2 rounded-lg text-slate-500">Recently played</span>
+              <span class="px-2.5 py-2 rounded-lg text-slate-500">Mods</span>
+              <p class="px-2 pt-3 pb-2 text-[10px] tracking-widest text-slate-600 font-bold">SYSTEM</p>
+              <span class="px-2.5 py-2 rounded-lg text-slate-500">Downloads</span>
+              <span class="px-2.5 py-2 rounded-lg text-slate-500">Settings</span>
+              <div class="mt-auto mx-1 mb-1 rounded-xl p-3 bg-green-500/[.08] border border-green-500/20">
+                <p class="text-green-300 font-semibold text-[11px]">All systems go</p>
+                <p class="text-slate-500 text-[11px] mt-0.5">12 games up to date</p>
+              </div>
+            </div>
+            <div class="flex-1 p-4 sm:p-5">
+              <div class="flex items-center gap-3">
+                <div class="flex-1 flex items-center gap-2 bg-white/[.04] border border-white/[.08] rounded-xl px-3 py-2 text-[12px] text-slate-500">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                  Search 12 games…
+                </div>
+                <span class="text-[11px] font-semibold px-3 py-2 rounded-lg btn-primary text-white whitespace-nowrap">+ Add game</span>
+              </div>
+              <div class="mt-4 rounded-xl overflow-hidden border border-white/[.08]">
+                <div class="h-28 bg-gradient-to-r from-[#0E2A18] via-[#14532D] to-[#166534] flex items-end p-4">
+                  <div>
+                    <p class="text-[10px] font-bold tracking-widest text-green-300/80">UPDATE READY</p>
+                    <p class="font-display font-bold text-lg leading-tight text-white">Neon Odyssey — Patch 2.4</p>
+                  </div>
+                  <span class="ml-auto text-[12px] font-bold bg-white text-black px-3.5 py-1.5 rounded-lg">Play</span>
+                </div>
+              </div>
+              <div class="mt-3 grid grid-cols-3 gap-2.5">
+                <div class="rounded-xl border border-white/[.08] bg-white/[.02] p-2.5">
+                  <div class="h-12 rounded-lg bg-[#16241A] border border-white/5"></div>
+                  <p class="text-[11px] font-semibold mt-2 truncate">Starforge</p>
+                  <p class="text-[10px] text-green-400">Ready</p>
+                </div>
+                <div class="rounded-xl border border-white/[.08] bg-white/[.02] p-2.5">
+                  <div class="h-12 rounded-lg bg-[#122019] border border-white/5"></div>
+                  <p class="text-[11px] font-semibold mt-2 truncate">Abyss Protocol</p>
+                  <p class="text-[10px] text-amber-300">68%</p>
+                </div>
+                <div class="rounded-xl border border-white/[.08] bg-white/[.02] p-2.5">
+                  <div class="h-12 rounded-lg bg-[#182218] border border-white/5"></div>
+                  <p class="text-[11px] font-semibold mt-2 truncate">Drift Kings</p>
+                  <p class="text-[10px] text-green-400">Ready</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SHOWCASE ================= -->
+  <section id="showcase" class="relative py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="reveal max-w-2xl mx-auto text-center">
+        <p class="text-xs font-bold tracking-[.2em] text-green-400">IN GAME</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl mt-3 tracking-tight">See Tyxen <span class="grad-text">in action</span></h2>
+        <p class="text-slate-500 mt-3">The Tyxen Client home menu — Singleplayer, Multiplayer and Mods, one clean screen.</p>
+      </div>
+      <div class="reveal relative mt-8">
+        <div class="absolute -inset-3 bg-green-500/[.07] blur-2xl rounded-[24px]" aria-hidden="true"></div>
+        <figure class="relative rounded-2xl border border-white/10 bg-[#0B0F0B] shadow-soft overflow-hidden">
+          <div class="flex items-center gap-2 px-4 py-3 border-b border-white/[.07]">
+            <span class="mock-dot bg-[#2A2E2A]"></span><span class="mock-dot bg-[#2A2E2A]"></span><span class="mock-dot bg-green-500"></span>
+            <span class="ml-2 text-xs text-slate-400 font-medium">Tyxen Client — Home Menu</span>
+            <span class="ml-auto text-[11px] text-slate-600 mono">Tyxen 1.21.11</span>
+          </div>
+          <a href="showcase.png" target="_blank" rel="noopener" title="Open full-size screenshot">
+            <img src="showcase.png" alt="Tyxen Client Minecraft home menu with Singleplayer, Multiplayer and Mods buttons" class="w-full h-auto block" loading="lazy" />
+          </a>
+        </figure>
+        <div class="mt-4 flex flex-wrap justify-center gap-2 text-[12px]">
+          <span class="px-3 py-1.5 rounded-full border border-white/10 bg-white/[.03] text-slate-400">Singleplayer</span>
+          <span class="px-3 py-1.5 rounded-full border border-white/10 bg-white/[.03] text-slate-400">Multiplayer</span>
+          <span class="px-3 py-1.5 rounded-full border border-green-500/30 bg-green-500/10 text-green-300">Mods</span>
+          <span class="px-3 py-1.5 rounded-full border border-white/10 bg-white/[.03] text-slate-400">Tyxen 1.21.11</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURES ================= -->
+  <section id="features" class="relative py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="reveal max-w-2xl">
+        <p class="text-xs font-bold tracking-[.2em] text-green-400">WHY TYXEN</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl mt-3 tracking-tight">Built for players who <span class="grad-text">just want to play</span></h2>
+        <p class="text-slate-500 mt-3">Fast, clean, and respectful of your machine. No bloat, no clutter.</p>
+      </div>
+      <div id="featuresGrid" class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </div>
+  </section>
+
+  <!-- ================= DOWNLOAD ================= -->
+  <section id="download" class="relative py-16 md:py-20 bg-[#0A0D0A]/80 border-y border-white/[.06]" style="backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="reveal max-w-2xl">
+        <p class="text-xs font-bold tracking-[.2em] text-green-400">GET THE BETA</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl mt-3 tracking-tight">Download <span class="grad-text">Tyxen Beta</span></h2>
+        <p class="text-slate-500 mt-3">Available for Windows now. Free, signed, and updateable in place. macOS and Linux builds are coming soon.</p>
+      </div>
+
+      <div class="reveal mt-6 max-w-3xl flex items-start gap-3 text-sm bg-amber-400/[.05] border border-amber-300/20 rounded-xl px-5 py-4" role="alert">
+        <svg class="shrink-0 mt-0.5 text-amber-300" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        <p class="text-amber-100/85 text-[14px]"><strong>Beta warning:</strong> this is an early build — expect bugs. Back up your saves before installing.</p>
+      </div>
+
+      <div id="downloadGrid" class="mt-6 grid md:grid-cols-3 gap-4"></div>
+
+      <div class="mt-4 grid lg:grid-cols-2 gap-4">
+        <div class="reveal card rounded-2xl p-6">
+          <h3 class="font-display font-bold text-[17px] flex items-center gap-2">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            System requirements</h3>
+          <div class="mt-4 space-y-4 text-sm">
+            <div><p class="font-semibold text-slate-200">Windows</p><ul id="reqWindows" class="mt-1.5 space-y-1 text-slate-500 list-disc list-inside"></ul></div>
+            <div class="opacity-60"><p class="font-semibold text-slate-400">macOS <span class="ml-1 text-[10px] font-bold tracking-widest px-1.5 py-0.5 rounded bg-white/5 border border-white/10 text-slate-500">COMING SOON</span></p><p class="mt-1.5 text-slate-600 text-[13px]">macOS 13 or later — in development, no download yet.</p></div>
+            <div class="opacity-60"><p class="font-semibold text-slate-400">Linux <span class="ml-1 text-[10px] font-bold tracking-widest px-1.5 py-0.5 rounded bg-white/5 border border-white/10 text-slate-500">COMING SOON</span></p><p class="mt-1.5 text-slate-600 text-[13px]">Ubuntu 22.04+ — in development, no download yet.</p></div>
+          </div>
+        </div>
+        <div class="reveal card rounded-2xl p-6">
+          <h3 class="font-display font-bold text-[17px] flex items-center gap-2">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Verify your download</h3>
+          <p class="text-sm text-slate-500 mt-2">Compare the SHA256 of your file after downloading. Click to copy.</p>
+          <div id="shaList" class="mt-4 space-y-2.5"></div>
+          <p class="mt-4 text-[11px] text-slate-600 mono">Windows: <code>certutil -hashfile Tyx-Launcher-Setup.exe SHA256</code></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CHANGELOG ================= -->
+  <section id="changelog" class="relative py-16 md:py-20">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="reveal">
+        <p class="text-xs font-bold tracking-[.2em] text-green-400">WHAT'S NEW</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl mt-3 tracking-tight">Changelog</h2>
+        <p class="text-slate-500 mt-2">Newest first. The beta moves fast.</p>
+      </div>
+      <div id="changelogList" class="mt-8 relative"></div>
+    </div>
+  </section>
+
+  <!-- ================= REPORT A BUG ================= -->
+  <section id="report" class="relative py-16 md:py-20 bg-[#0A0D0A]/80 border-y border-white/[.06]" style="backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="reveal max-w-2xl">
+        <p class="text-xs font-bold tracking-[.2em] text-green-400">SUPPORT</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl mt-3 tracking-tight">Report a bug in <span class="grad-text">60 seconds</span></h2>
+        <p class="text-slate-500 mt-2">We read every ticket. Good reports get fixed first.</p>
+      </div>
+
+      <ol class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 list-none">
+        <li class="reveal card rounded-2xl p-5">
+          <span class="w-8 h-8 rounded-lg btn-primary grid place-items-center font-bold text-white text-sm">1</span>
+          <h3 class="font-semibold mt-3 text-[15px]">Join the Discord</h3>
+          <p class="text-sm text-slate-500 mt-1">Click the button below to join the server.</p>
+        </li>
+        <li class="reveal card rounded-2xl p-5">
+          <span class="w-8 h-8 rounded-lg grid place-items-center font-bold text-white text-sm bg-[#1d2b21] border border-green-500/30 text-green-300">2</span>
+          <h3 class="font-semibold mt-3 text-[15px]">Go to <code class="mono text-green-300 text-[13px]" data-config="ticketChannelName">#open-a-ticket</code></h3>
+          <p class="text-sm text-slate-500 mt-1">Find it under the SUPPORT category.</p>
+        </li>
+        <li class="reveal card rounded-2xl p-5">
+          <span class="w-8 h-8 rounded-lg grid place-items-center font-bold text-white text-sm bg-[#1d2b21] border border-green-500/30 text-green-300">3</span>
+          <h3 class="font-semibold mt-3 text-[15px]">Open a ticket</h3>
+          <p class="text-sm text-slate-500 mt-1">Click “Create ticket” and describe the issue.</p>
+        </li>
+        <li class="reveal card rounded-2xl p-5">
+          <span class="w-8 h-8 rounded-lg grid place-items-center font-bold text-white text-sm bg-[#1d2b21] border border-green-500/30 text-green-300">4</span>
+          <h3 class="font-semibold mt-3 text-[15px]">Add the details</h3>
+          <p class="text-sm text-slate-500 mt-1">Version, OS, repro steps, screenshots/logs.</p>
+        </li>
+      </ol>
+
+      <div class="mt-4 grid lg:grid-cols-5 gap-4">
+        <div class="reveal lg:col-span-3 card rounded-2xl p-6">
+          <h3 class="font-display font-bold text-[17px]">What to include in a good bug report</h3>
+          <ul class="mt-4 space-y-2.5 text-sm text-slate-400">
+            <li class="flex gap-2.5"><input type="checkbox" id="c1" class="mt-1 accent-green-500 w-4 h-4 shrink-0" /><label for="c1"><strong class="text-slate-200">Launcher version</strong> — <span class="mono text-green-300" data-config="version">v0.1.0-beta</span> (Settings → About).</label></li>
+            <li class="flex gap-2.5"><input type="checkbox" id="c2" class="mt-1 accent-green-500 w-4 h-4 shrink-0" /><label for="c2"><strong class="text-slate-200">Your OS + specs</strong> — e.g. Windows 11, RTX 4060, 16 GB RAM.</label></li>
+            <li class="flex gap-2.5"><input type="checkbox" id="c3" class="mt-1 accent-green-500 w-4 h-4 shrink-0" /><label for="c3"><strong class="text-slate-200">Steps to reproduce</strong> — numbered, from a fresh launch.</label></li>
+            <li class="flex gap-2.5"><input type="checkbox" id="c4" class="mt-1 accent-green-500 w-4 h-4 shrink-0" /><label for="c4"><strong class="text-slate-200">Expected vs. actual</strong> — what should happen vs. what happens.</label></li>
+            <li class="flex gap-2.5"><input type="checkbox" id="c5" class="mt-1 accent-green-500 w-4 h-4 shrink-0" /><label for="c5"><strong class="text-slate-200">Screenshots + logs</strong> — Settings → Export logs, attach the .zip.</label></li>
+          </ul>
+          <button id="copyBugBtn" class="mt-5 inline-flex items-center gap-2 text-sm font-semibold px-4 py-2.5 rounded-xl btn-ghost text-slate-200">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            Copy bug-report template
+          </button>
+          <p id="copyBugMsg" class="hidden mt-2 text-xs text-green-300" role="status">Template copied — paste it into your ticket.</p>
+        </div>
+        <div class="reveal lg:col-span-2 rounded-2xl border border-green-500/25 bg-[#0C140D] p-6 text-center flex flex-col justify-center">
+          <svg class="mx-auto" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></svg>
+          <h3 class="font-display font-bold text-xl mt-3">Open a ticket on Discord</h3>
+          <p class="text-sm text-slate-500 mt-2">Fastest way to reach the devs.<br/>Median first response: <strong class="text-slate-300">under 24h</strong>.</p>
+          <a data-link="discordInvite" href="#" target="_blank" rel="noopener" class="btn-primary mt-5 inline-flex justify-center items-center gap-2 font-semibold text-white px-6 py-3 rounded-xl text-[15px]">
+            Open a Ticket on Discord
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+          </a>
+          <p class="mt-3 text-xs text-slate-600">Go to <span class="mono text-green-300" data-config="ticketChannelName">#open-a-ticket</span> after joining</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section id="faq" class="relative py-16 md:py-20">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="reveal">
+        <p class="text-xs font-bold tracking-[.2em] text-green-400">QUESTIONS</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl mt-3 tracking-tight">Frequently asked questions</h2>
+      </div>
+      <div id="faqList" class="mt-6 space-y-3"></div>
+    </div>
+  </section>
+
+  <!-- ================= DISCORD CTA ================= -->
+  <section class="relative pb-16 px-4 sm:px-6 lg:px-8">
+    <div class="reveal max-w-6xl mx-auto rounded-3xl border border-green-500/20 bg-[#0B110B] overflow-hidden relative">
+      <div class="glow-orb w-[420px] h-[220px] bg-green-600/15 top-0 left-1/3" aria-hidden="true"></div>
+      <div class="relative p-8 md:p-10 flex flex-col md:flex-row items-center gap-8">
+        <div class="flex-1 text-center md:text-left">
+          <h2 class="font-display font-bold text-2xl sm:text-[28px] tracking-tight">Shape the future of Tyxen.</h2>
+          <p class="text-slate-500 mt-2 text-[15px]">Join the Discord, get the beta role, vote on features, and get nightly builds first.</p>
+          <div class="mt-5 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+            <a data-link="discordInvite" href="#" target="_blank" rel="noopener" class="inline-flex justify-center items-center gap-2 bg-white text-black font-semibold px-6 py-3 rounded-xl hover:bg-slate-200 transition-colors text-[15px]">Join the Discord</a>
+            <a href="#download" class="inline-flex justify-center items-center gap-2 font-semibold px-6 py-3 rounded-xl btn-ghost text-white text-[15px]">Download Beta</a>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/[.03] px-8 py-5 text-center min-w-[190px]">
+          <p class="text-[11px] tracking-widest text-slate-500 font-bold">MEMBERS ONLINE</p>
+          <p class="font-display font-bold text-4xl mt-1" id="onlineCount2">1,284</p>
+          <p class="text-xs text-green-400 mt-1 flex items-center justify-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-green-400"></span>Server is live</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="border-t border-white/[.06] bg-[#050705]/85" style="backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="flex flex-col md:flex-row gap-8 justify-between">
+        <div class="max-w-sm">
+          <div class="flex items-center gap-2.5">
+            <img src="logo.png" alt="Tyxen logo" width="30" height="30" class="w-[30px] h-[30px] rounded-lg object-cover" />
+            <span class="font-display font-bold">Tyxen</span>
+            <span class="text-[10px] font-bold tracking-widest px-2 py-0.5 rounded-md bg-green-500/15 border border-green-500/30 text-green-300">BETA</span>
+          </div>
+          <p class="text-sm text-slate-500 mt-3">An early build of the Tyxen Launcher. Thanks for testing.</p>
+          <div class="flex gap-2 mt-4">
+            <a data-link="discordInvite" href="#" target="_blank" rel="noopener" aria-label="Discord" class="w-9 h-9 grid place-items-center rounded-lg border border-white/10 bg-white/[.04] hover:bg-white/[.08] transition-colors text-slate-300"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></svg></a>
+            <a data-link="github" href="#" target="_blank" rel="noopener" aria-label="GitHub" class="w-9 h-9 grid place-items-center rounded-lg border border-white/10 bg-white/[.04] hover:bg-white/[.08] transition-colors text-slate-300"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.05.78 2.13v3.16c0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a>
+            <a data-link="twitter" href="#" target="_blank" rel="noopener" aria-label="X" class="w-9 h-9 grid place-items-center rounded-lg border border-white/10 bg-white/[.04] hover:bg-white/[.08] transition-colors text-slate-300 font-bold text-sm">𝕏</a>
+            <a data-link="youtube" href="#" target="_blank" rel="noopener" aria-label="YouTube" class="w-9 h-9 grid place-items-center rounded-lg border border-white/10 bg-white/[.04] hover:bg-white/[.08] transition-colors text-slate-300"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-2C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.95 2c1.71.46 8.59.46 8.59.46s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+        </div>
+        <nav class="grid grid-cols-2 sm:grid-cols-3 gap-8 text-sm" aria-label="Footer">
+          <div><p class="font-semibold text-slate-200 mb-3">Product</p><ul class="space-y-2 text-slate-500"><li><a href="#features" class="hover:text-white">Features</a></li><li><a href="#download" class="hover:text-white">Download</a></li><li><a href="#changelog" class="hover:text-white">Changelog</a></li></ul></div>
+          <div><p class="font-semibold text-slate-200 mb-3">Support</p><ul class="space-y-2 text-slate-500"><li><a href="#faq" class="hover:text-white">FAQ</a></li><li><a href="#report" class="hover:text-white">Report a Bug</a></li><li><a data-link="discordInvite" href="#" target="_blank" rel="noopener" class="hover:text-white">Discord</a></li></ul></div>
+          <div><p class="font-semibold text-slate-200 mb-3">Legal</p><ul class="space-y-2 text-slate-500"><li><a data-link="terms" href="#" class="hover:text-white">Terms</a></li><li><a data-link="privacy" href="#" class="hover:text-white">Privacy</a></li></ul></div>
+        </nav>
+      </div>
+      <div class="mt-10 pt-6 border-t border-white/[.06] flex flex-col sm:flex-row gap-2 justify-between text-xs text-slate-600">
+        <p>© 2026 Tyxen. All rights reserved. Beta software provided as-is, without warranty.</p>
+        <p class="mono"><span data-config="version">v0.1.0-beta</span> · <span data-config="releaseDate">October 5, 2026</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="toTop" aria-label="Back to top" class="hidden fixed bottom-5 right-5 z-50 w-11 h-11 rounded-xl btn-primary text-white place-items-center font-bold">↑</button>
+
+  <script>
+    const $ = (s, el = document) => el.querySelector(s);
+    const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+    const C = SITE_CONFIG;
+
+    /* Hydrate config */
+    $$('[data-config="version"]').forEach(e => e.textContent = C.version);
+    $$('[data-config="releaseDate"]').forEach(e => e.textContent = C.releaseDate);
+    $$('[data-config="betaBadge"]').forEach(e => e.textContent = "BETA");
+    $$('[data-config="heroSub"]').forEach(e => e.textContent = C.heroSub);
+    $$('[data-config="ticketChannelName"]').forEach(e => e.textContent = C.ticketChannelName);
+    $$('[data-config="supportedOS"]').forEach(e => e.textContent = C.supportedOS.join(' · '));
+    $$('[data-link]').forEach(a => { const k = a.getAttribute('data-link'); if (C.links[k]) a.href = C.links[k]; });
+
+    /* Custom SVG icon set (stroke style, 1.8px — minimal + professional) */
+    const P = {
+      bolt: '<path d="M13 2 3 14h7l-1 8 10-12h-7z"/>',
+      grid: '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
+      refresh: '<polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>',
+      cloud: '<path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>',
+      puzzle: '<path d="M14.7 6.3a4.5 4.5 0 0 0-6 6L3 18l3 3 5.7-5.7a4.5 4.5 0 0 0 6-6L14 13l-3-3z"/>',
+      overlay: '<rect x="2" y="4" width="20" height="14" rx="2"/><line x1="8" y1="22" x2="16" y2="22"/><line x1="12" y1="18" x2="12" y2="22"/>',
+      windows: '<path d="M3 5.5 10.5 4.4v7.1H3zM11.7 4.2 21 3v8.5h-9.3zM3 12.5h7.5v7.1L3 18.5zM11.7 12.5H21V21l-9.3-1.3z"/>',
+      apple: '<path d="M17.05 12.54c-.03-2.89 2.36-4.27 2.47-4.34-1.35-1.97-3.44-2.24-4.18-2.27-1.78-.18-3.47 1.05-4.37 1.05-.9 0-2.29-1.02-3.77-1-1.94.03-3.72 1.13-4.72 2.86-2.01 3.49-.51 8.66 1.45 11.49.96 1.39 2.1 2.94 3.6 2.88 1.45-.06 2-.93 3.75-.93s2.24.93 3.77.9c1.56-.03 2.55-1.41 3.5-2.81 1.1-1.61 1.55-3.17 1.58-3.25-.04-.02-3.03-1.16-3.08-4.58zM14.16 4.06c.8-.97 1.34-2.32 1.19-3.66-1.15.05-2.55.77-3.38 1.74-.74.86-1.39 2.23-1.22 3.55 1.29.1 2.6-.65 3.41-1.63z"/>',
+      linux: '<path d="M12 2C7 2 3 6 3 11c0 1.2.24 2.34.68 3.38L2 20l3.5-.5c.87.55 1.87.9 2.95 1L9 22l1.5-1.5c.5.08 1 .15 1.5.15 5 0 9-4 9-9s-4-9.65-9-9.65zM8.5 14.5A1.5 1.5 0 1 1 10 13a1.5 1.5 0 0 1-1.5 1.5zm7 0A1.5 1.5 0 1 1 17 13a1.5 1.5 0 0 1-1.5 1.5z"/>',
+    };
+    const icon = (n, s = 20, fill = false) =>
+      `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="${fill ? 'currentColor' : 'none'}" stroke="${fill ? 'none' : 'currentColor'}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${P[n] || ''}</svg>`;
+
+    /* Features */
+    $('#featuresGrid').innerHTML = C.features.map(f => `
+      <article class="reveal card rounded-2xl p-6">
+        <span class="w-11 h-11 rounded-xl grid place-items-center bg-green-500/10 border border-green-500/25 text-green-300" aria-hidden="true">${icon(f.icon, 20)}</span>
+        <h3 class="font-display font-semibold text-[17px] mt-4">${f.title}</h3>
+        <p class="text-sm text-slate-500 mt-2 leading-relaxed">${f.text}</p>
+      </article>`).join('');
+
+    /* Downloads — Windows available now, other platforms coming soon */
+    $('#downloadGrid').innerHTML = C.downloads.map((d) => `
+      <article class="reveal card rounded-2xl p-6 flex flex-col relative ${d.available ? '' : 'opacity-75'}">
+        ${d.available
+          ? '<span class="absolute top-4 right-4 text-[10px] font-bold tracking-widest px-2 py-1 rounded-md bg-green-500/15 border border-green-500/30 text-green-300">AVAILABLE NOW</span>'
+          : '<span class="absolute top-4 right-4 text-[10px] font-bold tracking-widest px-2 py-1 rounded-md bg-white/5 border border-white/10 text-slate-500">UNAVAILABLE</span>'}
+        <span class="w-11 h-11 rounded-xl grid place-items-center bg-white/[.04] border border-white/10 ${d.available ? 'text-slate-200' : 'text-slate-600'}" aria-hidden="true">${icon(d.icon, 20, true)}</span>
+        <h3 class="font-display font-bold text-lg mt-4">Download for ${d.os}</h3>
+        <p class="mono text-xs text-slate-600 mt-1 break-all">${d.available ? d.file : 'No beta build yet'}</p>
+        <dl class="mt-4 space-y-1.5 text-[13px]">
+          <div class="flex justify-between"><dt class="text-slate-600">Status</dt><dd class="font-semibold ${d.available ? 'text-green-300' : 'text-slate-500'}">${d.available ? '● Available' : '○ Coming soon'}</dd></div>
+          <div class="flex justify-between"><dt class="text-slate-600">File size</dt><dd class="font-semibold text-slate-200">${d.size}</dd></div>
+          <div class="flex justify-between gap-4"><dt class="text-slate-600 shrink-0">Requires</dt><dd class="font-semibold text-slate-200 text-right">${d.req}</dd></div>
+        </dl>
+        ${d.available ? `
+        <a href="${C.links[d.urlKey]}" class="btn-primary text-white mt-5 inline-flex justify-center items-center gap-2 font-semibold px-5 py-3 rounded-xl text-[14px]" download>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download for ${d.os}
+        </a>
+        <p class="text-[11px] text-slate-600 mt-2.5 text-center">Signed release · checksum below</p>` : `
+        <a href="${C.links.discordInvite}" target="_blank" rel="noopener" class="btn-ghost text-slate-300 mt-5 inline-flex justify-center items-center gap-2 font-semibold px-5 py-3 rounded-xl text-[14px]">
+          Notify me on Discord
+        </a>
+        <p class="text-[11px] text-slate-600 mt-2.5 text-center">No build yet — get pinged on release</p>`}
+      </article>`).join('');
+
+    /* Requirements */
+    const fillReq = (id, arr) => { $(id).innerHTML = arr.map(x => `<li>${x}</li>`).join(''); };
+    fillReq('#reqWindows', C.sysReq.windows);
+
+    /* SHA — only available builds have checksums */
+    $('#shaList').innerHTML = C.downloads.filter(d => d.available && d.sha).map(d => `
+      <button class="sha-row w-full text-left rounded-xl border border-white/10 bg-white/[.02] hover:border-green-500/40 px-4 py-3 transition-colors" data-sha="${d.sha}" title="Click to copy SHA256 for ${d.os}">
+        <span class="flex items-center justify-between gap-3"><span class="text-xs font-bold text-slate-200">${d.os}</span><span class="text-[11px] text-slate-600">copy</span></span>
+        <code class="mono block text-[11px] text-slate-500 mt-1 break-all leading-relaxed">${d.sha}</code>
+      </button>`).join('');
+    $$('.sha-row').forEach(btn => btn.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(btn.dataset.sha); }
+      catch { const t = document.createElement('textarea'); t.value = btn.dataset.sha; document.body.appendChild(t); t.select(); document.execCommand('copy'); t.remove(); }
+      btn.style.borderColor = 'rgba(34,197,94,.6)';
+      setTimeout(() => btn.style.borderColor = '', 1200);
+    }));
+
+    /* Changelog */
+    $('#changelogList').innerHTML =
+      `<div class="absolute left-[13px] top-2 bottom-2 w-px bg-white/10" aria-hidden="true"></div>` +
+      C.changelog.map(v => `
+        <article class="reveal relative pl-9 pb-6 last:pb-0">
+          <span class="absolute left-[13px] top-1.5 w-[11px] h-[11px] -translate-x-1/2 rounded-full ${v.tag ? 'bg-green-500 ring-4 ring-green-500/20' : 'bg-[#2A2E2A] border border-white/15'}" aria-hidden="true"></span>
+          <div class="card rounded-2xl p-5">
+            <div class="flex flex-wrap items-center gap-2">
+              <h3 class="font-display font-bold mono text-[16px]">${v.version}</h3>
+              ${v.tag ? `<span class="text-[10px] font-bold tracking-widest px-2 py-1 rounded-md bg-green-500/15 border border-green-500/30 text-green-300">${v.tag.toUpperCase()}</span>` : ''}
+              <time class="ml-auto text-xs text-slate-600" datetime="${v.date}">${new Date(v.date + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+            </div>
+            <ul class="mt-3 space-y-1.5 text-sm text-slate-400">
+              ${v.changes.map(c => `<li class="flex gap-2"><span class="text-green-400 mt-0.5" aria-hidden="true">–</span><span>${c}</span></li>`).join('')}
+            </ul>
+          </div>
+        </article>`).join('');
+
+    /* FAQ */
+    $('#faqList').innerHTML = C.faqs.map((f, i) => `
+      <div class="faq-item reveal card rounded-2xl overflow-hidden !transform-none" data-open="${i === 0 ? 'true' : 'false'}">
+        <button class="faq-btn w-full flex items-center gap-3 text-left px-5 py-4 font-semibold text-[15px]" aria-expanded="${i === 0}" aria-controls="faq-a${i}" id="faq-q${i}">
+          <span class="flex-1">${f.q}</span>
+          <svg class="faq-chevron shrink-0 text-green-400" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer" id="faq-a${i}" role="region" aria-labelledby="faq-q${i}"><div><p class="px-5 pb-5 text-sm text-slate-500 leading-relaxed">${f.a}</p></div></div>
+      </div>`).join('');
+    $$('.faq-btn').forEach(btn => btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const open = item.dataset.open === 'true';
+      $$('.faq-item').forEach(el => { el.dataset.open = 'false'; el.querySelector('.faq-btn').setAttribute('aria-expanded', 'false'); });
+      if (!open) { item.dataset.open = 'true'; btn.setAttribute('aria-expanded', 'true'); }
+    }));
+
+    /* Header scroll state + mobile menu + active link */
+    const navPill = $('#navPill');
+    const onScroll = () => {
+      const sc = window.scrollY > 12;
+      navPill.style.boxShadow = sc ? '0 8px 32px rgba(0,0,0,.5)' : 'none';
+      navPill.style.borderColor = sc ? 'rgba(34,197,94,.22)' : 'rgba(255,255,255,.07)';
+      const top = $('#toTop');
+      const show = window.scrollY > 700;
+      top.classList.toggle('hidden', !show);
+      top.classList.toggle('grid', show);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    $('#toTop').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    const menuBtn = $('#menuBtn'), mobileMenu = $('#mobileMenu');
+    const setMenu = (open) => {
+      mobileMenu.classList.toggle('hidden', !open);
+      menuBtn.setAttribute('aria-expanded', String(open));
+      $('#menuIconOpen').classList.toggle('hidden', open);
+      $('#menuIconClose').classList.toggle('hidden', !open);
+    };
+    menuBtn.addEventListener('click', () => setMenu(mobileMenu.classList.contains('hidden')));
+    $$('.mobile-link').forEach(a => a.addEventListener('click', () => setMenu(false)));
+
+    const sections = ['features', 'showcase', 'download', 'changelog', 'faq', 'report'];
+    const linkMap = Object.fromEntries($$('[data-nav]').map(a => [a.dataset.nav, a]));
+    const secObs = new IntersectionObserver((es) => {
+      es.forEach(e => {
+        if (e.isIntersecting) {
+          Object.values(linkMap).forEach(a => a.classList.remove('active'));
+          linkMap[e.target.id]?.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    sections.forEach(id => { const el = document.getElementById(id); if (el) secObs.observe(el); });
+
+    /* Reveal */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    $$('.reveal').forEach(el => io.observe(el));
+
+    /* Discord count */
+    (async () => {
+      const set = (n) => {
+        const s = Number(n).toLocaleString('en-US');
+        const a = $('#onlineCount'), b = $('#onlineCount2');
+        if (a) a.textContent = s;
+        if (b) b.textContent = s;
+      };
+      if (!C.discordWidgetUrl) { set(C.discordFallbackOnline); return; }
+      try {
+        const r = await fetch(C.discordWidgetUrl);
+        if (!r.ok) throw 0;
+        const j = await r.json();
+        set(j.presence_count ?? C.discordFallbackOnline);
+      } catch { set(C.discordFallbackOnline); }
+    })();
+
+    /* Copy template */
+    $('#copyBugBtn').addEventListener('click', async () => {
+      const tpl = `Tyxen Bug Report\n-----------------\nLauncher version: ${C.version}\nOS + specs:\nSteps to reproduce:\n1.\n2.\n3.\nExpected:\nActual:\nScreenshots/logs attached: [yes/no] (Settings → Export logs)`;
+      try { await navigator.clipboard.writeText(tpl); }
+      catch { const t = document.createElement('textarea'); t.value = tpl; document.body.appendChild(t); t.select(); document.execCommand('copy'); t.remove(); }
+      const msg = $('#copyBugMsg');
+      msg.classList.remove('hidden');
+      setTimeout(() => msg.classList.add('hidden'), 2600);
+    });
+  </script>
+</body>
+</html>
